@@ -57,6 +57,7 @@
             this.button2_delAll = new System.Windows.Forms.Button();
             this.textbox_example = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button_point = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.help)).BeginInit();
@@ -81,6 +82,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button_0);
+            this.panel1.Controls.Add(this.button_point);
             this.panel1.Controls.Add(this.button_9);
             this.panel1.Controls.Add(this.button_8);
             this.panel1.Controls.Add(this.button_7);
@@ -263,7 +265,7 @@
             this.button_0.Font = new System.Drawing.Font("Orbitron", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_0.Location = new System.Drawing.Point(7, 225);
             this.button_0.Name = "button_0";
-            this.button_0.Size = new System.Drawing.Size(225, 68);
+            this.button_0.Size = new System.Drawing.Size(148, 68);
             this.button_0.TabIndex = 0;
             this.button_0.Text = "0";
             this.button_0.UseVisualStyleBackColor = false;
@@ -430,6 +432,19 @@
             this.panel3.Size = new System.Drawing.Size(474, 125);
             this.panel3.TabIndex = 2;
             // 
+            // button_point
+            // 
+            this.button_point.BackColor = System.Drawing.SystemColors.Window;
+            this.button_point.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_point.Font = new System.Drawing.Font("Orbitron", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_point.Location = new System.Drawing.Point(160, 225);
+            this.button_point.Name = "button_point";
+            this.button_point.Size = new System.Drawing.Size(71, 68);
+            this.button_point.TabIndex = 0;
+            this.button_point.Text = ",";
+            this.button_point.UseVisualStyleBackColor = false;
+            this.button_point.Click += new System.EventHandler(this.button_1_Click);
+            // 
             // Kalkulátor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -486,6 +501,7 @@
         private System.Windows.Forms.TextBox textbox_example;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox help;
+        private System.Windows.Forms.Button button_point;
     }
 }
 
